@@ -1,0 +1,10 @@
+
+{
+    "data": [
+        {"id": "1", "departamento": "DEPIN", "qtdCelasOtimas": "100" , "qtdCelasBoas": "50",
+        "qtdCelasRegulares": "20", "qtdCelasInserviveis": "5",
+        "qtdPresosMasculinos": "20", "qtdPresosFemininos": "10",
+        "vagasExistentes": "170"
+        }
+    ]
+}

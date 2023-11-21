@@ -1,0 +1,43 @@
+version: '3'
+
+services:
+  db_postgres:
+      container_name: db_postgres
+      image: postgres:10.17
+      environment:
+        POSTGRES_DB: cbm
+        POSTGRES_USER: admin
+        POSTGRES_PASSWORD: admin
+      ports:
+      - "5432:5432"
+      volumes:
+        - .docker/db/postgresql:/var/lib/postgresql/data
+  db_mysql02:
+    container_name: db_mysql02
+    image: mysql:latest
+    environment:
+      - MYSQL_DATABASE=keycloak
+      - MYSQL_ROOT_PASSWORD=root_pwd
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=pa55word
+    ports:
+      - "3306:3306"
+    volumes:
+      - .docker/db/mysql:/var/lib/mysql
+  auth_server:
+    container_name: auth_server
+    image: quay.io/keycloak/keycloak:19.0.1
+    environment:
+      - KEYCLOAK_ADMIN=admin
+      - KEYCLOAK_ADMIN_PASSWORD=admin
+      - KC_DB=mysql
+      - KC_DB_USERNAME=root
+      - KC_DB_PASSWORD=root_pwd
+      - KC_DB_URL_HOST=db_mysql02
+      - KC_DB_URL_PORT=3306
+      - KC_DB_SCHEMA=keycloak
+    ports:
+      - 8082:8080
+    command: start-dev
+    depends_on:
+      - db_mysql02

@@ -1,0 +1,33 @@
+
+{
+    "data": [
+        {"id": "1", "subdivisao": "01ª COORPIN / FEIRA DE SANTANA", "qtdCelasOtimas": "100" , "qtdCelasBoas": "50",
+        "qtdCelasRegulares": "20", "qtdCelasInserviveis": "5",
+        "qtdPresosMasculinos": "20", "qtdPresosFemininos": "10",
+        "vagasExistentes": "170", "unidades":[
+            {"id": "1", "nome": "DEPIN/ANGUERA", "qtdCelasOtimas": "50" , "qtdCelasBoas": "25",
+            "qtdCelasRegulares": "10", "qtdCelasInserviveis": "5",
+            "qtdPresosMasculinos": "10", "qtdPresosFemininos": "5",
+            "vagasExistentes": "85"},
+            {"id": "2", "nome": "DEPIN/ANTÔNIO CARDOSO", "qtdCelasOtimas": "50" , "qtdCelasBoas": "25",
+            "qtdCelasRegulares": "15", "qtdCelasInserviveis": "0",
+            "qtdPresosMasculinos": "10", "qtdPresosFemininos": "5",
+            "vagasExistentes": "85"}
+        ]
+        },
+        {"id": "2", "subdivisao": "02ª COORPIN / ALAGOINHAS", "qtdCelasOtimas": "100" , "qtdCelasBoas": "50",
+        "qtdCelasRegulares": "20", "qtdCelasInserviveis": "5",
+        "qtdPresosMasculinos": "20", "qtdPresosFemininos": "10",
+        "vagasExistentes": "170", "unidades":[
+            {"id": "1", "nome": "DEPIN/ARAÇAS", "qtdCelasOtimas": "50" , "qtdCelasBoas": "25",
+            "qtdCelasRegulares": "10", "qtdCelasInserviveis": "5",
+            "qtdPresosMasculinos": "10", "qtdPresosFemininos": "5",
+            "vagasExistentes": "85"},
+            {"id": "2", "nome": "DEPIN/IRARÁ", "qtdCelasOtimas": "50" , "qtdCelasBoas": "25",
+            "qtdCelasRegulares": "15", "qtdCelasInserviveis": "0",
+            "qtdPresosMasculinos": "10", "qtdPresosFemininos": "5",
+            "vagasExistentes": "85"}
+        ]
+        }
+    ]
+}
